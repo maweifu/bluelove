@@ -23,7 +23,7 @@ if(!empty($ban[$ip]))
   exit();
 }
 if (!empty($ip)) {
-  $sql = "SELECT * FROM `content` where ip = '$ip'";
+  $sql = "SELECT * FROM `bluelove` where ip = '$ip'";
   $commd = mysqli_query($conn,$sql);
   $result = mysqli_fetch_assoc($commd);
   if (!empty($result)) {
@@ -45,7 +45,7 @@ while($row=mysql_fetch_row($re))
 }
 
 
-$sql1 = "SELECT COUNT(*) FROM `content`";
+$sql1 = "SELECT COUNT(*) FROM `bluelove`";
 $qid = mysqli_query($conn, $sql1 );//你的查询
 $res = mysqli_fetch_assoc($qid);
 $count = $res[0]; //取出统计值
@@ -53,15 +53,14 @@ echo "count:${count}";
 echo $res[0]."<=============>".$res[1];
 
 
-$qid = mysql_query("SELECT COUNT(*) FROM `content`");//你的查询
+$qid = mysql_query("SELECT COUNT(*) FROM `bluelove`");//你的查询
 $res = mysql_fetch_array($qid);
 $count = $res[0]; //取出统计值
 
-$count = "SELECT COUNT(*) FROM `content`";
+$count = "SELECT COUNT(*) FROM `bluelove`";
 echo "总共有数据总数:${$count}";
 #echo "总共有数据总数:$count";
 
-$sql = "INSERT INTO `content` VALUES(uuid(),'$osname','$content','$name','$ip','$time')";
+$sql = "INSERT INTO `bluelove` VALUES(uuid(),'$osname','$content','$name','$ip','$time')";
 @mysqli_query($conn,$sql);
-echo 200;
 ?>

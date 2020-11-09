@@ -11,7 +11,7 @@ if (empty($p) || $p < "1")
 {
   $p = "1";
 }
-$mysql = "select * from `TABLES` where `TABLE_NAME`='content';";
+$mysql = "select * from `TABLES` where `TABLE_NAME`='bluelove';";
 $result = mysqli_query($conns,$mysql);
 $arr = mysqli_fetch_assoc($result);
 $num_all = $arr['TABLE_ROWS'];
@@ -40,7 +40,7 @@ $num = ($p - 1) * $px;
   &emsp;快来表白吧-><a class="mdui-text-color-grey-800" href="add.php">戳我戳我</a>
 </p>
 <?php
-$comd = "SELECT * FROM content order by time DESC limit $num,$px;";
+$comd = "SELECT * FROM bluelove order by time DESC limit $num,$px;";
 $sql = mysqli_query($conn,$comd);
 //防止出现空白
 //信息

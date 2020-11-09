@@ -1,11 +1,11 @@
-<title>星辰安装系统</title>
+<title>星空安装系统</title>
 <body background="./assets/img/background.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <meta charset="utf-8">
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/mdui/0.4.2/css/mdui.min.css">
   <script src="//cdnjs.cloudflare.com/ajax/libs/mdui/0.4.2/js/mdui.min.js"></script>
   <br />
-  <center><h2>星辰网站安装系统</h2></center>
+  <center><h2>星空网站安装系统</h2></center>
   <?php
   $lockfile = "install.lock";
   if (file_exists($lockfile)) {
@@ -48,11 +48,11 @@
     @$conn = mysqli_connect($db_host,$db_username,$db_password,$db_name);
     if ($conn) {
       $content = "
-        CREATE TABLE `content` (
-        `uid` mediumtext NOT NULL,
-        `to` mediumtext NOT NULL,
+        CREATE TABLE `bluelove` (
+        `id` INT,
+        `toname` VARCHAR(30) NOT NULL,
         `content` mediumtext NOT NULL,
-        `from` mediumtext NOT NULL,
+        `yourname` VARCHAR(30)mediumtext NOT NULL,
         `ip` mediumtext NOT NULL,
         `time` mediumtext NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;";

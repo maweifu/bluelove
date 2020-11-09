@@ -2,7 +2,7 @@
 <div class="mdui-card">
     <div class="mdui-card-header">
         <img class="mdui-card-header-avatar" src="https://blog.xsot.cn/photo.jpg" />
-        <div class="mdui-card-header-title">星辰表白墙</div>
+        <div class="mdui-card-header-title">星空表白墙</div>
         <div class="mdui-card-header-subtitle">一款简洁美观的悄悄话平台</div>
     </div>
     <div class="mdui-card-media">
