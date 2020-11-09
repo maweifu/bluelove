@@ -35,31 +35,9 @@ if (!empty($ip)) {
   }
 }
 
-
-$sql="SELECT Sdept ,COUNT(Sno) FROM `student` GROUP BY Sdept";
-$re=mysql_query($sql);
-while($row=mysql_fetch_row($re))
-{
-	echo $row[0]."<=============>".$row[1];
-	echo "<br/>";
-}
-
-
-$sql1 = "SELECT COUNT(*) FROM `bluelove`";
-$qid = mysqli_query($conn, $sql1 );//你的查询
-$res = mysqli_fetch_assoc($qid);
-$count = $res[0]; //取出统计值
-echo "count:${count}";
-echo $res[0]."<=============>".$res[1];
-
-
-$qid = mysql_query("SELECT COUNT(*) FROM `bluelove`");//你的查询
-$res = mysql_fetch_array($qid);
-$count = $res[0]; //取出统计值
-
-$count = "SELECT COUNT(*) FROM `bluelove`";
-echo "总共有数据总数:${$count}";
-#echo "总共有数据总数:$count";
+$result = $conn->query("SELECT COUNT(*) FROM `content`");
+list($row_num) = $result->fetch_row();  /// $row_num
+echo "======$row_num====";
 
 $sql = "INSERT INTO `bluelove` VALUES(uuid(),'$osname','$content','$name','$ip','$time')";
 @mysqli_query($conn,$sql);
