@@ -9,7 +9,7 @@ V2.2
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
   <meta http-equiv="Cache-Control" content="no-siteapp" />
-  <title>星辰表白墙</title>
+  <title>星空表白墙</title>
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/mdui/0.4.2/css/mdui.min.css">
   <script src="//cdnjs.cloudflare.com/ajax/libs/mdui/0.4.2/js/mdui.min.js"></script>
   <link rel="shortcut icon" type="image/x-icon" href="./assets/img/favicon.ico" media="screen" />
@@ -28,7 +28,7 @@ V2.2
       <span class="mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-white" mdui-drawer="{target: '#main-drawer'}">
         <i class="mdui-icon material-icons">menu</i>
       </span>
-      <a href="" class="mdui-typo-title">星辰表白墙</a>
+      <a href="" class="mdui-typo-title">星空表白墙</a>
     </header>
             
     <script src="//cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.min.js"></script>   
